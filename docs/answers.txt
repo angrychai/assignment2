@@ -1,0 +1,83 @@
+Git Lab Tutorials done on October 6, 2020.
+Set up GitHub account October 7, 2020.
+
+1.
+$ git commit -m"Add status.txt in /docs"
+[master 05e20f0] Add status.txt in /docs
+ 1 file changed, 7 insertions(+)
+ create mode 100644 docs/status.txt
+
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 701 bytes | 701.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/angrychai/assignment2.git
+   f4975e5..05e20f0  master -> master
+
+
+2.
+9 commits.
+Found using "git shortlog" and adding the commits by user together.
+6 by Esteban Parra plus 3 by Wyatt Wood makes 9
+
+3.
+Couldn't find a method under Git itself to find this direct information, it appears
+git doesn't record that information in the repository, only last time committed.
+
+Last modified:
+Date:  31 Oct  7 14:16
+using ls -l README.md
+
+Last committed:
+Date:   Thu Oct 8 08:15:12 2020 -0400
+using: git log README.md
+
+4.
+One thing branches are used for is to allow for new features or changes to be
+implemented and debugged without causing problems in the main program during
+their development.
+Branches can also be used to allow for specific developers or groups of
+developers to split up a project and work on specific bugs or aspects of it in
+parallel without another's work interfering with theirs during that time.
+
+5.
+git log shows the sequence of commits including commit hash, author, date, and
+commit message.
+git status shows status of the local repository vs the remote repository and
+status of tracked and untracked files.
+
+6.
+git log Vehicle.h
+
+7.
+git log --grep='file'
+
+8.
+Inheritance refers to the ability of an inheriting class to access the
+public and protected data and methods of the class it is inheriting from.
+Polymorphism refers to the ability for descendant classes to be cast as
+any of the classes in their parent hierarchy. If Car inherits from Vehicle,
+Car can be cast as a Vehicle object, too.
+Encapsulation refers to the ability for a class to protect its data by only
+allowing its modification via the public interface of the class itsef.
+
+9.
+The main difference is that in the Integration manager workflow the person
+who maintains the blessed code directly interfaces with the developer while
+in the dictator and lieutenants workflow there is more stratification, with
+developers instead working with one of many lieutenants who in turn will
+have their code pulled and integrated by the dictator after the lieutenant
+has done their own integration of multiple developer's work. Dictator and
+Lieutenants is more often used for very large projects like the Linux kernel.
+
+10.
+A team of 100 developers would benefit from the dictator and lieutenants
+model by being able to continue their work from their own repository while
+a lieutenant handles integration with other developers in their own
+repository before that work is integrated by a dictator. Dealing with
+changes from 99 other developers on a regular basis would cause more
+work than centralizing that work with lieutenants and dictators.
